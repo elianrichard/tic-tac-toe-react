@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+button{
+  color: #000 !important;
+}
+
+.board{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 390px;
+  height: 390px;
+  border: 1px solid #000;
+}
+
+.board button{
+  font-size: 2em;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+.board button:hover{
+  background-color: rgba(0,0,0,0.1)
+}
+
+.description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.description button{
+  width: 80px;
+  height: 30px;
+  margin-top: 1em;
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+@media only screen and (max-width: 450px){
+  .board{
+    height: 240px;
+    width: 240px;
+  }
+}
